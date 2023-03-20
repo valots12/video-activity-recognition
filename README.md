@@ -1,4 +1,4 @@
-# Neural Network Classifier for human activity videos from HMDB dataset 
+# NN-Classifier for human activity videos from HMDB dataset 
 
 ***Part of the Foundations of Deep Learning project | UniMiB***
 
