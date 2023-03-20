@@ -41,9 +41,11 @@ The feature extractor in MoveNet is MobileNetV2 with an attached feature pyramid
 - person keypoint heatmap: predicts the location of all keypoints, independent of person instances;
 - 2D per-keypoint offset field: predicts local offsets from each output feature map pixel to the precise sub-pixel location of each keypoint.
 
-\bigskip
+<br></br>
 
 <img width="583" alt="225679688-abdbc201-8b36-40f4-8ab9-db7262ed827d" src="https://user-images.githubusercontent.com/63108350/226449042-bbc1e10d-2ee8-49bd-b991-3bdad93c37ec.png">
+
+<br></br>
 
 ## Results
 
