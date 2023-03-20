@@ -6,11 +6,11 @@ The purpose of the project is the development of different classification algori
 
 ## Dataset
 
-The selected dataset is named HMDB (Human Emotion DB) and is available at the following [link](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/). Each observation corresponds to one video, for a total of 6849 clips. Each video has been associated with one of 51 possible classes, each of which identifies a specific human behavior. Moreover the classes of actions can be grouped into:
+The selected dataset is named HMDB (Human Emotion DB) and is available at the following [link](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/). Each observation corresponds to one video, for a total of 6849 clips. Each video has been associated with one of 51 possible classes, each of which identifies a specific human behavior. Moreover, the classes of actions can be grouped into:
 - general facial actions, such as smiling or laughing;
 - facial actions with object manipulation, such as smoking;
 - general body movements, such as running;
-- body movements withi object interaction, such as golfing;
+- body movements with object interaction, such as golfing;
 - body movements for human interaction, such as kissing.
 
 Due to computational problems, we have chosen only 19 classes (general body movements) on which to train the human activity recognition algorithm.
@@ -31,11 +31,11 @@ ADVANCED LRCN
 
 ## MoveNet approach
 
-MoveNet is an ultra fast and accurate model that detects 17 keypoints of a body. The model is offered with two variants, known as Lightning and Thunder. Lightning is intended for latency-critical applications, while Thunder is intended for applications that require high accuracy.
+MoveNet is an ultra fast and accurate model that detects 17 keypoints on a body. The model is offered in two variants, known as Lightning and Thunder. Lightning is intended for latency-critical applications, while Thunder is intended for applications that require high accuracy.
 
-MoveNet is a bottom-up estimation model, using heatmaps to accurately localize human keypoints. The architecture consists of two components: a feature extractor and a set of prediction heads.
+MoveNet is a bottom-up estimation model that uses heatmaps to accurately localize human keypoints. The architecture consists of two components: a feature extractor and a set of prediction heads.
 
-The feature extractor in MoveNet is MobileNetV2 with an attached feature pyramid network (FPN), which allows for a high resolution, semantically rich feature map output. There are four prediction heads attached to the feature extractor, responsible for densely predicting a:
+The feature extractor in MoveNet is MobileNetV2 with an attached feature pyramid network (FPN), which allows for a high-resolution, semantically rich feature map output. There are four prediction heads attached to the feature extractor, responsible for densely predicting:
 - person center heatmap: predicts the geometric center of person instances;
 - keypoint regression field: predicts full set of keypoints for a person, used for grouping keypoints into instances;
 - person keypoint heatmap: predicts the location of all keypoints, independent of person instances;
@@ -45,7 +45,7 @@ The feature extractor in MoveNet is MobileNetV2 with an attached feature pyramid
 
 ## Results
 
-| Network       | Valid Accuracy |
+| Network       | Validation Accuracy |
 | ------------- | -------------- |
 | Basic LRCN    |       34%      |
 | Adavnced LRCN |       41%      |
